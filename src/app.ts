@@ -2,7 +2,6 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import userAuth from "./routes/userAuth.Routes";
-import otpAuth from "./routes/otpAuth.Routes";
 import path from "path";
 
 const initApp = () => {
@@ -17,7 +16,7 @@ const initApp = () => {
 
     // Routes
     app.use("/api", userAuth);
-    app.use("/api",otpAuth);
+  
 
     return app;
   } catch (err) {
@@ -25,6 +24,5 @@ const initApp = () => {
     throw err;
   }
 };
-
 
 export default initApp;
