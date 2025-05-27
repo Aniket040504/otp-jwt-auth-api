@@ -37,5 +37,13 @@
     "@types/node": "^22.10.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aniket040504/otp-jwt-auth-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aniket040504/otp-jwt-auth-api/issues"
+  },
+  "homepage": "https://github.com/Aniket040504/otp-jwt-auth-api#readme"
 }
