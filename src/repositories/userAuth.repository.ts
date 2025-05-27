@@ -1,6 +1,6 @@
 import { userDetails } from "../models/userauthmodel";
 
-export const findUserByEmail = async (email: string) => {
+export const findUserByEmail = async (email: string) :Promise<any> => {
     try{
     return await userDetails.findOne({ email });
 }
@@ -10,7 +10,7 @@ export const findUserByEmail = async (email: string) => {
     }
 };
 
-export const createUser = async (name: string, email: string, password: string) => {
+export const createUser = async (name: string, email: string, password: string) :Promise<any> => {
     try{
     return await userDetails.create({ name, email, password });
     }
